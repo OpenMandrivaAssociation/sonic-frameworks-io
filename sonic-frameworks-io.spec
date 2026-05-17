@@ -53,11 +53,12 @@ BuildRequires: cmake(KF6JobWidgets)
 
 # pending rename
 # BuildRequires: cmake(KF6Auth)
+# BuildRequires: cmake(KF6DocTools)
 BuildRequires: %{_lib}SonicFrameworksAuth-devel
+BuildRequires: %{_lib}SonicFrameworksDocTools-devel
 
 BuildRequires: cmake(KF6TextWidgets)
 BuildRequires: cmake(KF6Service)
-BuildRequires: cmake(KF6DocTools)
 BuildRequires: cmake(KF6DBusAddons)
 BuildRequires: cmake(KF6Completion)
 
