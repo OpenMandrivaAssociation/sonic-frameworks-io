@@ -121,6 +121,7 @@ Network transparent access to files and data
 
 %install -a
 %find_lang %{name} --all-name --with-qt --with-html --with-man
+rm -rf %{buildroot}/%{_libdir}/cmake
 
 %files -f %{name}.lang
 %{_datadir}/qlogging-categories6/kio.*
@@ -160,7 +161,10 @@ Network transparent access to files and data
 %{_includedir}/KF6/KIOFileWidgets
 %{_includedir}/KF6/KIOGui
 %{_includedir}/KF6/KIOWidgets
-%{_libdir}/cmake/KF6KIO
+
+# pending rename
+# %{_libdir}/cmake/KF6KIO
+
 %{_datadir}/kdevappwizard/templates/kioworker6.tar.bz2
 
 %files -n %{libname}
