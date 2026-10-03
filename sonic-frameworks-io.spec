@@ -6,8 +6,8 @@
 #define git 20240217
 
 Name: sonic-frameworks-io
-Version: 6.28.0
-Release: %{?git:0.%{git}.}3
+Version: 6.30.0
+Release: %{?git:0.%{git}.}1
 URL:   https://github.com/Sonic-DE/sonic-frameworks-io
 # %if 0%{?git:1}
 # Source0: https://invent.kde.org/frameworks/kio/-/archive/master/kio-master.tar.bz2#/kio-%{git}.tar.bz2
@@ -45,9 +45,17 @@ BuildRequires: cmake(Qt6)
 BuildRequires: cmake(Qt6QuickTest)
 BuildRequires: cmake(Qt6Concurrent)
 BuildRequires: cmake(Qt6Core5Compat)
+BuildRequires: cmake(KF6Config)
+BuildRequires: cmake(KF6CoreAddons)
+BuildRequires: cmake(KF6I18n)
 BuildRequires: cmake(KF6Solid)
 BuildRequires: cmake(KF6Crash)
 BuildRequires: cmake(KF6KCMUtils)
+BuildRequires: cmake(KF6ColorScheme)
+BuildRequires: cmake(KF6GuiAddons)
+BuildRequires: cmake(KF6ItemViews)
+BuildRequires: cmake(KF6WidgetsAddons)
+BuildRequires: cmake(Qt6GuiPrivate)
 BuildRequires: cmake(KF6Bookmarks)
 BuildRequires: cmake(KF6JobWidgets)
 
