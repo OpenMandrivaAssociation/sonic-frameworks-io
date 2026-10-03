@@ -7,7 +7,7 @@
 
 Name: sonic-frameworks-io
 Version: 6.28.0
-Release: %{?git:0.%{git}.}2
+Release: %{?git:0.%{git}.}3
 URL:   https://github.com/Sonic-DE/sonic-frameworks-io
 # %if 0%{?git:1}
 # Source0: https://invent.kde.org/frameworks/kio/-/archive/master/kio-master.tar.bz2#/kio-%{git}.tar.bz2
@@ -121,7 +121,6 @@ Network transparent access to files and data
 
 %install -a
 %find_lang %{name} --all-name --with-qt --with-html --with-man
-rm -rf %{buildroot}/%{_libdir}/cmake
 
 %files -f %{name}.lang
 %{_datadir}/qlogging-categories6/kio.*
@@ -161,9 +160,7 @@ rm -rf %{buildroot}/%{_libdir}/cmake
 %{_includedir}/KF6/KIOFileWidgets
 %{_includedir}/KF6/KIOGui
 %{_includedir}/KF6/KIOWidgets
-
-# pending rename
-# %{_libdir}/cmake/KF6KIO
+%{_libdir}/cmake/KF6KIO
 
 %{_datadir}/kdevappwizard/templates/kioworker6.tar.bz2
 
