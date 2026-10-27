@@ -6,7 +6,7 @@
 #define git 20240217
 
 Name: sonic-frameworks-io
-Version: 6.30.0
+Version: 6.31.0
 Release: %{?git:0.%{git}.}1
 URL:   https://github.com/Sonic-DE/sonic-frameworks-io
 # %if 0%{?git:1}
